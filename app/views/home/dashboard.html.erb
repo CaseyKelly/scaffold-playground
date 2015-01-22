@@ -1,10 +1,11 @@
-<p class="lead">Welcome to your homepage</p>
+<p class="lead">Check out all these people, organizations, and aliens!</p>
 <p><%= link_to 'New Person', new_person_path %></p>
 <p><%= link_to 'New Organization', new_organization_path %></p>
 <p><%= link_to 'New Alien', new_alien_path %></p>
 
+<div class="row">
 <h1>Listing people</h1>
-<table>
+<table class="col-md-6">
   <thead>
     <tr>
       <th>First name</th>
@@ -27,11 +28,12 @@
     <% end %>
   </tbody>
 </table>
-<br>
+</div>
 
+<div class="row">
 <h1>Listing organizations</h1>
 
-<table>
+<table class="col-md-6">
   <thead>
     <tr>
       <th>Name</th>
@@ -52,11 +54,12 @@
     <% end %>
   </tbody>
 </table>
-<br>
+</div>
 
+<div class="row">
 <h1>Listing aliens</h1>
 
-<table>
+<table class="col-md-6">
   <thead>
     <tr>
       <th>Name</th>
@@ -77,5 +80,4 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
+</div>
